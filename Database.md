@@ -136,15 +136,15 @@ A database stores information in multiple datasets consisting of columns and row
 For example, an unsharded database containing a dataset for customer records might look like this.
 
 ```table
-CustomerID    Name     State
+CustomerID    Name         State
 
-1           John       California
+1           John          California
 
-2         Jane         Washington
+2           Jane          Washington
 
-3         Paulo        Arizona
+3           Paulo         Arizona
 
-4        Wang          Georgia
+4           Wang          Georgia
 ```
 
 Sharding involves separating different rows of information from the table and storing them on different machines, as the following shows.
@@ -154,7 +154,7 @@ Computer A
 ```
 CustomerID    Name       State
 
-1             John       California
+1            John        California
 
 2            Jane        Washington
 ```
@@ -162,11 +162,11 @@ CustomerID    Name       State
 Computer B
 
 ```
-CustomerID       Name       State
+CustomerID       Name          State
 
-3               Paulo       Arizona
+3               Paulo         Arizona
 
-4              Wang          Georgia
+4               Wang          Georgia
 ```
 
 #### Shards
